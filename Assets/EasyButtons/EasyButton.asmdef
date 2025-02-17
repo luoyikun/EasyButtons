@@ -1,12 +1,8 @@
 {
-    "name": "EasyButtons.Editor",
+    "name": "EasyButton",
     "rootNamespace": "",
-    "references": [
-        "GUID:f24cf67903b27ae498b3069ecc30cc11"
-    ],
-    "includePlatforms": [
-        "Editor"
-    ],
+    "references": [],
+    "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": true,
     "overrideReferences": false,

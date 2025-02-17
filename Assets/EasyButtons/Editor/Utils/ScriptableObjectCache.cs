@@ -13,7 +13,7 @@
     {
         private const string AssemblyName = "EasyButtons.DynamicAssembly";
 
-        private static readonly AssemblyBuilder _assemblyBuilder = AppDomain.CurrentDomain.DefineDynamicAssembly(
+        private static readonly AssemblyBuilder _assemblyBuilder = AssemblyBuilder.DefineDynamicAssembly(
             new AssemblyName(AssemblyName)
             {
                 CultureInfo = CultureInfo.InvariantCulture,
@@ -22,7 +22,7 @@
                 VersionCompatibility = AssemblyVersionCompatibility.SameDomain
             }, AssemblyBuilderAccess.Run);
 
-        private static readonly ModuleBuilder _moduleBuilder = _assemblyBuilder.DefineDynamicModule(AssemblyName, true);
+        private static readonly ModuleBuilder _moduleBuilder = _assemblyBuilder.DefineDynamicModule(AssemblyName);
 
         private static readonly Dictionary<string, Type> _classDict = new Dictionary<string, Type>();
 
